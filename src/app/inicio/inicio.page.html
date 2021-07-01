@@ -1,0 +1,36 @@
+
+<ion-content>
+  <ion-grid class ="top-padding">
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header>
+            <ion-img class ="logo-inicio" src ="assets/img/logo.png"></ion-img>
+          </ion-card-header>
+          <ion-card-content>
+              <ion-text color ="medium" class="ion-text-center ion-text-uppercase">
+                  <h3>Iniciar sesión</h3> 
+              </ion-text>
+              <div class="ion-padding-bottom ion-padding-top">
+                    <ion-item>
+                      <ion-icon name="person" class="ion-padding-end"></ion-icon>
+                      <ion-input name="user" type="text" required placeholder="Correo electrónico"></ion-input>             
+                  </ion-item>
+                  <ion-item>
+                    <ion-icon name="lock-closed" class="ion-padding-end"></ion-icon>
+                    <ion-input name="user" type="text" required placeholder="Contraseña"></ion-input>
+                </ion-item>
+                <div class="ion-padding-top">
+                    <ion-text class="ion-text-right">
+                      <h4 routerLink="/recuperar-contrasena">¿Olvidó su contraseña?</h4>
+                    </ion-text>
+                </div>
+              </div>
+              <ion-button expand="block" routerLink = "home" color ="azul-la">Ingresar</ion-button>
+              <ion-button fill ="outline" expand="block" routerLink = "/registro" color ="azul-la">Crear Cuenta</ion-button>
+            </ion-card-content>
+      </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,35 @@
+
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="12">
+            <ion-card>
+              <ion-card-header>
+                <ion-text color ="azul-la" class="ion-text-center">
+                  <h5>
+                    Detalle conflicto despido injustificado
+                  </h5>
+                </ion-text>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-list>
+                  <ion-item>
+                      <ion-label position ="floating"> 
+                          fecha del despido 
+                      </ion-label>
+                        <ion-icon slot ="start" name="calendar-outline" class="padding-top-10"></ion-icon>
+                      <ion-datetime
+                        [monthShortNames] = "meses"
+                        cancelText = "cancelar"
+                        doneText="confirmar"
+                      >
+                    </ion-datetime>
+                  </ion-item>
+              </ion-list>
+              </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    <div class="ion-padding">
+      <ion-button color ="azul-la" expand="block" size ="small" routerLink = "contrato-laboral" type="submit" class="ion-no-margin">Enviar</ion-button>
+    </div> 
+    </ion-grid> 

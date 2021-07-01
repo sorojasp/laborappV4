@@ -1,0 +1,38 @@
+
+     <ion-item>
+        <ion-label position="floating" type = "text">Nombres*</ion-label>
+        <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+        <ion-label position="floating" type = "text">Apellidos*</ion-label>
+        <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" type = "text">Dirección*</ion-label>
+    <ion-input></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label color="medium">Tipo Documento*</ion-label>
+  <ion-select interface="popover">
+      <ion-select-option>Cedula de ciudadania</ion-select-option>
+      <ion-select-option>Cedula de extranjeria</ion-select-option>
+      <ion-select-option>Pasaporte</ion-select-option>
+      <ion-select-option>Carnet Diplomatico</ion-select-option>
+  </ion-select>
+</ion-item>
+
+  <ion-item>
+        <ion-label position="floating" type="text">No documento*</ion-label>
+        <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+        <ion-label position="floating" type="tel">Telefono*</ion-label>
+        <ion-input></ion-input>
+  </ion-item> 
+  <!-- Con ruta hija de home -->
+  <!-- <div class="ion-padding-top"> 
+    <ion-button size="small" routerLink="/home/contrato-laboral" expand="full" color ="azul-la">siguiente</ion-button>
+  </div>       -->
+  <div class="ion-padding-top">
+    <ion-button size="small" (click)="seguir()" expand="full" color ="azul-la">siguiente</ion-button>
+  </div>      

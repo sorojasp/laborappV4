@@ -1,0 +1,29 @@
+
+  <ion-menu side="start" menuId="primer-menu" contentId="main" type="push">
+    <ion-header>
+      <ion-toolbar color="azul-la">
+            <ion-item class="ion-margin-vertical ion-margin-horizontal" color ="azul-fa">
+              <ion-avatar slot="start">
+                <img src="assets/img/user_default.png">
+              </ion-avatar>
+              <ion-text >
+                <ion-label color ="light">Mario Juez</ion-label>
+              </ion-text>
+            </ion-item>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle  *ngFor="let i of menuOptions"> 
+             <ion-item [routerLink] = "i.redirectTo" class="ion-padding-end">
+              <ion-icon [name]="i.icon" class="ion-padding-end"></ion-icon>
+                <ion-text color ="medium">
+                  <h6>
+                    {{i.name}}
+                  </h6>
+                </ion-text>
+           </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>

@@ -1,0 +1,68 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+
+$gradiante1 :linear-gradient(-5deg, var(--ion-color-dark), var(--ion-color-azul-la));
+.logo-inicio {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+.top-padding {
+    padding-top: 10%;
+}
+.text-complete {
+  overflow: visible !important;
+}
+.gradiante-1 {
+    background-image: #{$gradiante1};
+}
+.fondo{
+  height: 25%;  
+}
+
+.bg-gradiente-1
+{
+  --background: #{$gradiante1};
+}
+ion-label
+{
+    --color: var(--ion-color-medium) !important;
+}
+
+.padding-top-10{
+  padding-top: 10px ;
+}
+
+// ion-datetime[placeholder]{
+//   overflow: visible !important;
+//   font-size: 14px;
+// }
+
+

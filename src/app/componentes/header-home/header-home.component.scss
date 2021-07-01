@@ -1,0 +1,27 @@
+
+.logo{
+        position: absolute;
+        z-index: 9999;
+        top: 26%;
+    }
+
+.button-home{
+    z-index: 3;
+    // top: 26%;
+    // z-index:11;
+     position:sticky;
+     margin-right: 80%;
+}
+.circulo {
+    position: absolute;
+    top: 46%;
+    z-index: 333;
+    justify-content: center;
+
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #ffffff;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "laborApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

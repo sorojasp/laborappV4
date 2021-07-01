@@ -1,0 +1,30 @@
+<app-header titulo="Iniciar demanda"></app-header>
+<ion-content>
+  <div class="fondo gradiante-1">
+
+  <ion-grid class ="top-padding">
+    <!-- <div class="ion-padding-top">
+      <ion-button size="small" routerLink="/home/contrato-laboral" expand="full" color ="azul-la">siguiente</ion-button>
+    </div>     -->
+    <ion-row>
+      <ion-col>
+        <ion-list>
+                <ion-item>
+                    <ion-label color ="medium">Tipo Persona</ion-label>
+                    <ion-select  
+                        #seleccion
+                        [(value)]="opcion" 
+                        interface="popover" 
+                    >
+                        <ion-select-option value ="opcion1">Persona Natural</ion-select-option>
+                        <ion-select-option value ="opcion2">Persona Juridica</ion-select-option>
+                    </ion-select>
+                </ion-item>
+                <app-persona-natural *ngIf="seleccion.value == 'opcion1'"></app-persona-natural>
+                <app-persona-juridica *ngIf="seleccion.value == 'opcion2'"> </app-persona-juridica>
+      </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </div>
+</ion-content>

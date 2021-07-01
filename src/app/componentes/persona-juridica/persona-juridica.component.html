@@ -1,0 +1,48 @@
+
+<ion-item>
+      <ion-label position="floating" type = "text">Razón Social*</ion-label>
+      <ion-input></ion-input>
+</ion-item>
+<ion-item>
+      <ion-label position="floating" type = "text">NIT*</ion-label>
+      <ion-input></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating" type = "text">Dirección*</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label>Departamento</ion-label>
+    <ion-select interface="popover">
+      <ion-select-option>Bogotá</ion-select-option>
+    </ion-select>
+</ion-item>
+<ion-item>
+  <ion-label>Ciudad</ion-label>
+  <ion-select interface="popover">
+    <ion-select-option>Bogotá D.C</ion-select-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+      <ion-label position="floating" type="email">email*</ion-label>
+      <ion-input></ion-input>
+</ion-item>
+<ion-item>
+      <ion-label position="floating" type="tel">Telefono*</ion-label>
+      <ion-input></ion-input>
+</ion-item> 
+<ion-radio-group allow-empty-selection value="anchovies">
+  <ion-item>
+      <ion-text color ="medium" class="ion-text-justify"><h6>¿Sabe usted los datos del representante legal?</h6></ion-text>
+      <ion-radio slot="end" value="biff"></ion-radio>
+  </ion-item>
+</ion-radio-group>
+  <!-- Con ruta hija de home -->
+<!-- <div class="ion-padding-top">
+  <ion-button size="small" routerLink="/home/contrato-laboral" expand="full" color ="azul-la">siguiente</ion-button>
+</div>    -->
+<div class="ion-padding-top">
+  <ion-button size="small" (click)="seguir()" expand="full" color ="azul-la">siguiente</ion-button>
+</div>   
+
+
